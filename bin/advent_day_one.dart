@@ -18,7 +18,8 @@ Future<void> main() async {
 }
 
 Future<List<String>> readFile() async {
-  final input = await File('inputs/input.txt').readAsString(encoding: utf8);
+  final input =
+      await File('inputs/day_one/input.txt').readAsString(encoding: utf8);
   final list = input.split("\n");
   return list;
 }
